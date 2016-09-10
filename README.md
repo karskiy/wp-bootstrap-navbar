@@ -1,2 +1,2 @@
 # wp-bootstrap-navbar
-Bootstrap 3 Navbar Into WordPress
+Заготовка в виде плагина для последующей интергации Bootstrap3 Navbar в тему WordPress
