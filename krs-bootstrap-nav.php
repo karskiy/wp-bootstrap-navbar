@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Bootstrap 3 Navbar Menu
  * Plugin URI: http://karskiy.com
- * Description: This plugin adds some nav in theme.
+ * Description: Заготовка в виде плагина для последующей интергации Bootstrap3 Navbar в тему WordPress.
  * Version: 1.0.0
  * Author: Evgeniy Karskiy
  * Author URI: http://karskiy.com
