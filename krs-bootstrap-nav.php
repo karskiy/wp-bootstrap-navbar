@@ -53,7 +53,7 @@ class KRS_Walker_Nav_Menu extends Walker_Nav_Menu {
  * Добавляем к элементу особый класс, если у него есть дочерние
  */
 function krs_secondary_menu_classes( $classes, $item, $args ) {	
-    if ( $args->walker->has_children === true ) {
+    if ( isset( $args->walker->has_children ) && $args->walker->has_children === true ) {
         $classes[] = 'dropdown';
     }
     return $classes;
@@ -65,7 +65,7 @@ add_filter( 'nav_menu_css_class', 'krs_secondary_menu_classes', 10, 3 );
  */
 function krs_add_specific_menu_atts( $atts, $item, $args ) {
     // проверяем машинное имя меню и наличие дочерних эл.
-    if( $args->theme_location == 'primary' && $args->walker->has_children === true ) {
+    if( $args->theme_location == 'primary' && isset( $args->walker->has_children ) && $args->walker->has_children === true ) {
 		// собираем массив с атрибутами:
 		$atts['class'] = 'dropdown-toggle';
 		$atts['data-toggle'] = 'dropdown';
